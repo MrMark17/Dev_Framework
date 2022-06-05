@@ -13,7 +13,7 @@ class Mahasiswa extends Migration
      */
     public function up()
     {
-        Schema::create('mahasiswa', function (Blueprint $table) {
+        Schema::create('mahasiswas', function (Blueprint $table) {
             $table ->id();
             $table ->char('nim', 8)->unique();
             $table ->string('nama');
