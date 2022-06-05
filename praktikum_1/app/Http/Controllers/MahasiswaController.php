@@ -11,5 +11,16 @@ class MahasiswaController extends Controller
 
         dump($mahasiswa);
     }
+
+    public function insert(){
+        $mahasiswa = new Mahasiswa;
+        $mahasiswa -> nim = '19003036';
+        $mahasiswa -> nama = 'Sari Citra Lestari';
+        $mahasiswa -> tanggal_lahir = '20-12-31';
+        $mahasiswa -> ipk = '3.5';
+        $mahasiswa -> save();
+
+        dump($mahasiswa);
+    }
 }
 ?>
