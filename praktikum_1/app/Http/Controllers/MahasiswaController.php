@@ -22,5 +22,17 @@ class MahasiswaController extends Controller
 
         dump($mahasiswa);
     }
+    public function update(){
+        $mahasiswa = Mahasiswa::find(1);
+        $mahasiswa -> tanggal_lahir = '2001-01-01';
+        $mahasiswa -> ipk = 2.9;
+        $mahasiswa -> save();
+
+        dump($mahasiswa);
+    }
+    public function all(){
+        $result = Mahasiswa::all();
+        dump($result);
+    }
 }
 ?>

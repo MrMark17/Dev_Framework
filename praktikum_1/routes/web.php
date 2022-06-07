@@ -21,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('/cek-object', [MahasiswaController::class,'cekObject']);
 Route::get('/insert', [MahasiswaController::class,'insert']);
+Route::get('/update', [MahasiswaController::class,'update']);
+Route::get('/all', [MahasiswaController::class,'all']);
