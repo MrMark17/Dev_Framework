@@ -15,7 +15,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
-                        {{-- <a href="{{ route('mahasiswa.insert') }}" class="btn btn-md btn-success mb-3">TAMBAH DATA</a> --}}
+                        <a href="#" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
                         <table class="table table-bordered">
                             <thead>
                               <tr>
@@ -34,11 +34,11 @@
                                     <td>{{ $mahasiswa->ipk }}</td>
                                     <td>{{ $mahasiswa->tanggal_lahir }}</td>
                                     <td class="text-center">
-                                        {{-- <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('mahasiswa.destroy', $mahasiswa->id) }}" method="POST">
-                                            <a href="{{ route('mahasiswa.edit', $mahasiswa->id) }}" class="btn btn-sm btn-primary">EDIT</a>
+                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="#" method="POST">
+                                            <a href="#" class="btn btn-sm btn-primary">EDIT</a>
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-sm btn-danger">HAPUS</button> --}}
+                                            <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
                                         </form>
                                     </td>
                                 </tr>
