@@ -3,9 +3,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
+use Illuminate\Support\Facades\Storage;
 
 class MahasiswaController extends Controller
 {
+    public function index()
+    {
+        $mahasiswas = Mahasiswa::latest()->paginate(10);
+        return view('mahasiswa.index', compact('mahasiswas'));
+    }
     public function cekObject(){
         $mahasiswa = new Mahasiswa;
 
